@@ -25,5 +25,5 @@ jobs:
         context: .
         push: true
         tags: >
-          ${{ secrets.DOCKER_USERNAME }}/node-monitoring:latest,
-          ${{ secrets.DOCKER_USERNAME }}/node-monitoring:${{ github.sha }}
+          ${{ secrets.DOCKER_USERNAME }}/desafiodevops:latest,
+          ${{ secrets.DOCKER_USERNAME }}/desafiodevops:${{ github.sha }}
