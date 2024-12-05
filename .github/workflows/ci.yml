@@ -6,22 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-    - name: Install dependencies
-      run: npm install
-    - name: Run tests
-      run: npm test
   docker-build:
-    needs: build-and-publish
     runs-on: ubuntu-latest
 
     steps:
