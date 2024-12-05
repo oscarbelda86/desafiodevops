@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./app/Dockerfile
+          file: ./src/Dockerfile
           push: true
           tags: >
             ${{ secrets.DOCKER_USERNAME }}/desafiodevops:latest,
